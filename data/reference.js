@@ -52,7 +52,7 @@ const repositories = [
         description: "",
         open: true,
         public: true
-    }
+    },
 
     {
         repo_id: 2,
@@ -60,7 +60,7 @@ const repositories = [
         description: "",
         open: true,
         public: true
-    }
+    },
 
     {
         repo_id: 3,
@@ -68,7 +68,7 @@ const repositories = [
         description: "",
         open: true,
         public: true
-    }
+    },
 
     {
         repo_id: 4,
@@ -76,7 +76,7 @@ const repositories = [
         description: "",
         open: true,
         public: true
-    }
+    },
 
     {
         repo_id: 5,

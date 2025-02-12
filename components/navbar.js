@@ -30,3 +30,4 @@
             
             document.body.insertBefore(header, document.body.firstChild);
         }
+       createHeader();

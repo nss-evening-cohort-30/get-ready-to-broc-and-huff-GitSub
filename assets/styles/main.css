@@ -1,56 +1,222 @@
-*{
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.roboto-roboto {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body {
+  background: black;
 }
 
 .container {
   display: grid;
   grid-template: 
-  "profile navbar navbar"
-  "profile main main"
-  "profile main main"
-  "profile form form"
-  "footer footer footer";
-  width: 100vw;
+  "profile navbar navbar navbar"
+  "profile main main main"
+  "profile main main main"
+  "profile form form form"
+  "footer footer footer footer";
+  background: black;
+  margin: 0 auto;
+  padding: 0;
+  grid-gap: 0px;
+  width: 100%;
 }
 
 #profile-container {
-  background: black;
   grid-area: profile;
+  padding: 0;
+  margin: 0 20px;
+}
+
+.profile-div {
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 20px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.profile-div img {
+  width: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.profile-div h3 {
+  font-size: 24px;
+}
+
+.profile-div h6 {
+  color: #999;
+  margin-top: -10px;
+}
+
+.profile-description {
+  text-align: left;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.profile-btn-container {
+  text-align: left;
+}
+
+button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 7px 14px;
+  margin-right: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #222;
+}
+
+.fa-heart {
+  color: pink;
+}
+
+.fa-star {
+  color: gold;
+}
+
+.fa-star:hover {
+  cursor: pointer;
+}
+
+.follow-container {
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.profile-info {
+  text-align: left;
+  font-size: 14px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: rgb(204, 199, 199);
+}
+
+.highlights {
+  text-align: left;
+  font-size: 14px;
+}
+
+.highlights h6 {
+  font-size: 16px;
+}
+
+.left {
+  text-align: left;
+}
+
+#organizations {
+  text-align: left;
+}
+
+#organizations img {
+  width: 30px;
+  border-radius: 5px;
+  margin: 0 5px 20px 5px;
+}
+
+#sponsors {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+#sponsors img {
+  width: 30px;
+  margin: 5px;
 }
 
 #nav-container {
   grid-area: navbar;
+  background: green;
+  max-height: 10vh;
 }
 
 #main-content {
   grid-area: main;
-  background: red;
-  height: 20vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.repo-card {
+  background: #222;
+  color: white;
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.repo-card-title {
+  display: flex;
+  align-items: center;
+}
+
+.repo-card-title h4 {
+  color: steelblue;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.repo-description {
+  padding: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+  min-height: 150px;
+}
+
+.repo-details {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+}
+
+.language {
+  display: flex;
+  align-items: start;
+}
+
+.language img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }
 
 #form-container {
   grid-area: form;
-  background: blue;
-  height: 10vh;
+  background: black;
+  margin: auto 10px;
 }
 
 #footer-container {
   grid-area: footer;
   background: gray;
   height: 10vh;
-}
-
-.navbar {
-  background: rgba(0, 0, 0, 0.468);
-  color: white;
-}
-
-.navbar-nav {
-  margin: 0 auto;
-}
-
-.navbar-nav li {
-  color: white;
 }

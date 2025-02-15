@@ -5,20 +5,19 @@ export const createFooter = () => {
     <nav class="navbar navbar-expand-sm">
       <ul class="navbar-nav">
         <li class="nav-item">
-           <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
-          </li>
-         <li class="nav-item">
-           <a class="nav-link" href="#">Repos</a>
-         </li>
-           <li class="nav-item">
-           <a class="nav-link" href="#">Packages</a>
-           </li>
-          <li class="nav-item">
-           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          <a class="nav-link" href="#">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="repos.html">Repos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="packages.html">Packages</a>
         </li>
        </ul>
     </nav>
-    <br>
     <p>© 2025 GitReady to Broc & Huff. All rights reserved.</p>
   `;
   

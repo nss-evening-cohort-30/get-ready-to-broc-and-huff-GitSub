@@ -1,8 +1,8 @@
 export const projects = [
     {
         project_id: 1,
-        title: "",
-        description: "", 
+        title: "Birthday App",
+        description: "This project has the code that contains .......", 
         pinned: true,
         favorite: false,
         public: true
@@ -10,8 +10,8 @@ export const projects = [
 
     {
         project_id: 2,
-        title: "",
-        description: "", 
+        title: "XYZ Company Site Debugging",
+        description: "This project has the code that contains .......", 
         pinned: true,
         favorite: false,
         public: true
@@ -19,8 +19,8 @@ export const projects = [
     
     {
         project_id: 3,
-        title: "",
-        description: "", 
+        title: "Weather App",
+        description: "This project has the code that contains .......", 
         pinned: true,
         favorite: false,
         public: true
@@ -28,8 +28,8 @@ export const projects = [
     
     {
         project_id: 4,
-        title: "",
-        description: "", 
+        title: "Fitness App",
+        description: "This project has the code that contains .......", 
         pinned: true,
         favorite: false,
         public: true
@@ -37,8 +37,8 @@ export const projects = [
 
     {
         project_id: 5,
-        title: "",
-        description: "", 
+        title: "Todo App",
+        description: "This project has the code that contains .......", 
         pinned: true,
         favorite: false,
         public: true
@@ -48,40 +48,40 @@ export const projects = [
 export const repositories = [
     {
         repo_id: 1,
-        title: "",
-        description: "",
+        title: "Artist Landing Page",
+        description: "This repository contains the code that ........",
         open: true,
         public: true
     },
 
     {
         repo_id: 2,
-        title: "",
-        description: "",
+        title: "Life Coach Booking/Scheduling APP",
+        description: "This repository contains the code that ...",
         open: true,
         public: true
     },
 
     {
         repo_id: 3,
-        title: "",
-        description: "",
+        title: "Express Delivery Site",
+        description: "This repository contains the code that ...",
         open: true,
         public: true
     },
 
     {
         repo_id: 4,
-        title: "",
-        description: "",
+        title: "Blog",
+        description: "This repository contains the code that ...",
         open: true,
         public: true
     },
 
     {
         repo_id: 5,
-        title: "",
-        description: "",
+        title: "Weather APP",
+        description: "This repository contains the code that ...",
         open: true,
         public: true
     }
@@ -157,39 +157,40 @@ export const pinnedRepositories = [
 export const packages = [
     {
         packages_id: 1,
-        title: "",
-        description: "",
+        title: "Python",
+        description: "A standard format for distributing Python programs and libraries used for Python programming language.",
         public: true
     },
 
     {
         packages_id: 2,
-        title: "",
-        description: "",
+        title: "Docker",
+        description: "A software platform used for building applications based on containers- small and lightweight environments",
         public: true
     },
 
     {
         packages_id: 3,
-        title: "",
-        description: "",
+        title: "NodeJs",
+        description: "A free and open-source JavaScript runtime environment that lets developers create web applications, servers, and more ",
         public: true
     },
 
     {
         packages_id: 4,
-        title: "",
-        description: "",
+        title: "npm",
+        description: "A package manager for JS, included with NodeJs. Enables sharing and reusing code.",
         public: true
     },
 
     {
         packages_id: 5,
-        title: "",
-        description: "",
+        title: "NuGet",
+        description: "A free and open-source package manager used for the Microsoft dev platforms i.e. .NET.",
         public: true
     }
 ]
+        // HEAD
 
 export const profiles = [
     {
@@ -290,3 +291,5 @@ export const sponsors = [
         photoId: "headshot (21).png"
     },
 ]
+// =======
+// >>>>>>> 15ba346f0864f5ae4896be7bf3f34c2f83d6e936

@@ -260,41 +260,31 @@ a:hover {
 }
 
 /*start of broc's styling*/
-#main-content-projects {
-  background-color: black;
-  color: white
-}
-#form-container-projects {
-  background-color: black;
-  color: white;
-}
- #main-content-packages {
-  background-color: black;
-  color: white
-}
-#form-container-packages {
-  background-color: black;
-  color: white;
-}
 /*main content for packages flex*/
 #rendPack {
 display: flex;
 flex-flow: row wrap;
+color: white;
+gap: 15px;
+
 }
 .pack-box-el {
-width: 200px;
+width: 275px;
+height: 200px;
+border: 1px solid rgb(39, 39, 39);
+border-radius: 10px;
+padding: 20px;
 }
 .pack-title-el {
-
+display: block;
 
 }
 .pack-desc-el {
-
+display: block;
 
 }
 .learn-El {
-
-
+font-weight: lighter;
 }
 /**/
 
@@ -329,40 +319,41 @@ width: 200px;
 
 /*form styling*/
 #pro-box-el {
-
+color: white;
 
 }
 #form-title-el {
-
-
+  color: white;
 }
 #form-desc-el {
-
+  color: white;
 
 }
 #entry-el {
-
-
+  color: white;
 }
 #form-name-el {
-
+  color: white;
 
 }
 #form-entry-name-el {
-
+  color: white;
+  background-color: rgb(39, 39, 39);
+  border-radius: 25px;
 
 }
 #form-pro-desc-el {
-
+  color: white;
 
 }
 #form-prosub-desc-el {
-
+  color: white;
 
 }
 #form-entry-desc-el {
-
-
+  color: white;
+  background-color: rgb(39, 39, 39);
+  border-radius: 25px;
 }
 #submit-el {
 

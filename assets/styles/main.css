@@ -158,13 +158,39 @@ a:hover {
 
 #nav-container {
   grid-area: navbar;
-  background: green;
-  max-height: 10vh;
+  background: black;
+  border: 2px solid #999;
+
 }
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.nav-item {
+  margin: 10px;
+  background: black;
+}
+
+.nav-link {
+  background: black;
+  color: white;
+}
+
+.nav-link:hover {
+  color: #999;
+}
+
+.navbar-nav .nav-link.active {
+  color: #999;
+}
+
 
 /* Main Content */
 
-#main-content {
+#main-content-pinned {
   grid-area: main;
   background: black;
   display: flex;
@@ -231,6 +257,4 @@ a:hover {
 
 #footer-container {
   grid-area: footer;
-  background: gray;
-  height: 10vh;
 }

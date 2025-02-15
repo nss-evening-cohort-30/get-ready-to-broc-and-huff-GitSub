@@ -1,6 +1,8 @@
+import { createHeader } from "../components/navbar.js";
 import { profile } from  "../components/profile.js";
 import { repoCard } from "../components/repo-card.js"
 import { pinnedRepoForm } from "../components/pinned-repo-form.js";
+import { createFooter } from "../components/footer.js";
 import { renderToDom } from "../utils/renderToDom.js";
 // import { projects } from "../data/reference.js";
 // import { repositories } from "../data/reference.js";
@@ -58,7 +60,7 @@ const renderRepoCards = (array) => {
 
   arrayToRender.forEach(item => {
     repoString += repoCard(item);
-    renderToDom('#main-content', repoString);
+    renderToDom('#main-content-pinned', repoString);
   });
 }
 
@@ -69,7 +71,7 @@ const renderRepoCards = (array) => {
 const renderPinnedForm = () => {
   let pinString = "";
   pinString += pinnedRepoForm;
-  renderToDom("#form-container", pinString)
+  renderToDom("#form-container-pinned", pinString)
 }
 
 
@@ -115,10 +117,12 @@ const eventListeners = () => {
   });
 }
 
-const startApp = () => {  
+const startApp = () => {
+  createHeader();  
   renderProfile(profiles);
   renderRepoCards(pinnedRepositories);
   renderPinnedForm();
+  createFooter();
   eventListeners();
 }
 

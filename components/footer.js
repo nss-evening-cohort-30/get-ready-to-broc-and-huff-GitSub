@@ -1,4 +1,6 @@
-function createFooter () => {
+import { renderToDom } from "../utils/renderToDom.js";
+
+export const createFooter = () => {
    const domString = `
     <nav class="navbar navbar-expand-sm">
       <ul class="navbar-nav">
@@ -16,23 +18,21 @@ function createFooter () => {
         </li>
        </ul>
     </nav>
+    <br>
+    <p>© 2025 GitReady to Broc & Huff. All rights reserved.</p>
   `;
   
-const footEr = document.createElement('footer');
- footer.style.backgroundColor = '#C4C4C4';
- footer.style.width = '100%';
- footer.style.height = '96px';
- footer.style.textAlign = 'left';
- footer.style.marginTop = '20px';
- footer.style.padding = '20px';
- footer.style.boxSizing = 'border-box';
+const footer = document.querySelector('#footer-container');
+//  footer.style.backgroundColor = '#C4C4C4';
+//  footer.style.width = '100%';
+//  footer.style.height = '96px';
+//  footer.style.textAlign = 'left';
+//  footer.style.marginTop = '20px';
+//  footer.style.padding = '20px';
+//  footer.style.boxSizing = 'border-box';
 
  footer.innerHTML = domString;
   
-  const text = document.createTextNode('© 2025 GitReady to Broc & Huff. All rights reserved.');
-  footer.appendChild(text);
 
-  document.body.appendChild(footer);
+  renderToDom("#footer-container", domString);
 }
-
-createFooter();

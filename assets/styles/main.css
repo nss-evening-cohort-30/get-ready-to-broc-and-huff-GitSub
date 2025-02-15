@@ -183,10 +183,6 @@ a:hover {
   color: #999;
 }
 
-.navbar-nav .nav-link.active {
-  color: #999;
-}
-
 
 /* Main Content */
 
@@ -246,7 +242,7 @@ a:hover {
 
 /* Form Styling */
 
-#form-container {
+#form-container-pinned {
   grid-area: form;
   background: black;
   margin: auto 10px;
@@ -257,4 +253,10 @@ a:hover {
 
 #footer-container {
   grid-area: footer;
+}
+
+#footer-container p {
+  text-align: center;
+  font-size: 12px;
+  color: #999;
 }

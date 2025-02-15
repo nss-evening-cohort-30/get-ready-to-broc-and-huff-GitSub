@@ -5,7 +5,7 @@ export const createHeader = () => {
                 <nav class="navbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Overview</a>
+                            <a class="nav-link" href="index.html">Overview</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="repos.html">Repos</a>

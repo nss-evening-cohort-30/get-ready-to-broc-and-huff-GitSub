@@ -4,16 +4,16 @@ export const createHeader = () => {
             const domString = `
                 <nav class="navbar">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+                        <li class="nav-item" id="nav-overview">
                             <a class="nav-link active" aria-current="page" href="index.html">Overview</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" id="nav-repos">
                             <a class="nav-link" href="repos.html">Repos</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" id="nav-projects">
                             <a class="nav-link" href="projects.html">Projects</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" id="nav-packages">
                             <a class="nav-link" href="packages.html">Packages</a>
                         </li>
                     </ul>

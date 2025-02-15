@@ -258,3 +258,117 @@ a:hover {
 #footer-container {
   grid-area: footer;
 }
+
+/*start of broc's styling*/
+#main-content-projects {
+  background-color: black;
+  color: white
+}
+#form-container-projects {
+  background-color: black;
+  color: white;
+}
+ #main-content-packages {
+  background-color: black;
+  color: white
+}
+#form-container-packages {
+  background-color: black;
+  color: white;
+}
+/*main content for packages flex*/
+#rendPack {
+display: flex;
+flex-flow: row wrap;
+}
+.pack-box-el {
+width: 200px;
+}
+.pack-title-el {
+
+
+}
+.pack-desc-el {
+
+
+}
+.learn-El {
+
+
+}
+/**/
+
+
+/*main content for projects flex*/
+#pro-search-el {
+
+
+}
+#pro-view-el {
+
+
+}
+#pro-tab-el {
+
+
+}
+#pro-item-el {
+
+
+}
+.pro-title-el {
+
+
+}
+.pro-desc-el {
+
+
+}
+/**/
+
+
+/*form styling*/
+#pro-box-el {
+
+
+}
+#form-title-el {
+
+
+}
+#form-desc-el {
+
+
+}
+#entry-el {
+
+
+}
+#form-name-el {
+
+
+}
+#form-entry-name-el {
+
+
+}
+#form-pro-desc-el {
+
+
+}
+#form-prosub-desc-el {
+
+
+}
+#form-entry-desc-el {
+
+
+}
+#submit-el {
+
+
+}
+/**/
+
+
+/*end of broc's styling*/

@@ -183,14 +183,10 @@ a:hover {
   color: #999;
 }
 
-.navbar-nav .nav-link.active {
-  color: #999;
-}
-
 
 /* Main Content */
 
-#main-content-pinned {
+#main-content {
   grid-area: main;
   background: black;
   display: flex;
@@ -379,3 +375,8 @@ margin-top: 20px;
 
 
 /*end of broc's styling*/
+#footer-container p {
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+}

@@ -186,7 +186,7 @@ a:hover {
 
 /* Main Content */
 
-#main-content-pinned {
+#main-content {
   grid-area: main;
   background: black;
   display: flex;
@@ -242,7 +242,7 @@ a:hover {
 
 /* Form Styling */
 
-#form-container-pinned {
+#form-container {
   grid-area: form;
   background: black;
   margin: auto 10px;

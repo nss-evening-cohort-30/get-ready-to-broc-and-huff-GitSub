@@ -74,7 +74,7 @@ const renderPinnedForm = () => {
 
 
 
-// const eventListeners = () => {
+const eventListeners = () => {
 // //toggle favorite button (star)
 
 // const toggleStar = (e) => {

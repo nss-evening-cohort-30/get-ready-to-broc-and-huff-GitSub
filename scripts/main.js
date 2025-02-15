@@ -180,20 +180,20 @@ const packStart = () => {
           <div id="pro-view-el">
           <div id="pro-tab-el">
           </div>
-          <div id="pro-item-el">
-          </div>
           </div>`
     //
     //basic loop through data to render it function
       const projectsOnDom = (a, b) => {
         let proItem = ""
         a.forEach((item) => {
-          proItem += `<p class="pro-title-el">${item.title}</p>
-          <p class="pro-desc-el">${item.description}</p>`
+          proItem += `<div id="pro-item-el">
+          <p class="pro-title-el">${item.title}</p>
+          <p class="pro-desc-el">${item.description}</p>
+          </div>`
         })
         renderToDom(b, proItem)
       }
-      projectsOnDom(projects, "#pro-item-el")
+      projectsOnDom(projects, "#pro-tab-el")
     //
     //form content innerhtml
       const formContainer = document.querySelector("#form-container")
@@ -234,6 +234,7 @@ const packStart = () => {
 
 //all of it put together and started
 const startApp = () => {
+  overStart()
   createHeader();
   createFooter();  
   renderProfile(profiles);

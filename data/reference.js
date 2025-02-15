@@ -1,49 +1,53 @@
 export const projects = [
     {
         project_id: 1,
-        title: "Birthday App",
-        description: "This project has the code that contains .......", 
+        title: "GoopStation",
+        description: "what happens when there is goop",
         pinned: true,
         favorite: false,
         public: true
     },
+
 
     {
         project_id: 2,
-        title: "XYZ Company Site Debugging",
-        description: "This project has the code that contains .......", 
+        title: "FRINGE",
+        description: "you know it",
         pinned: true,
         favorite: false,
         public: true
     },
-    
+   
     {
         project_id: 3,
-        title: "Weather App",
-        description: "This project has the code that contains .......", 
+        title: "Unicorn generator",
+        description: "Makes them extra edgy",
         pinned: true,
         favorite: false,
         public: true
     },
-    
+   
     {
         project_id: 4,
-        title: "Fitness App",
-        description: "This project has the code that contains .......", 
+        title: "Buisness Thing",
+        description: "Buisness, Buisness, Buisness",
         pinned: true,
         favorite: false,
         public: true
     },
 
+
     {
         project_id: 5,
-        title: "Todo App",
-        description: "This project has the code that contains .......", 
+        title: "AAHHHHHHHHHHHHHh",
+        description: "fun not included",
         pinned: true,
         favorite: false,
         public: true
     },
+   
 ]
+
 
 export const repositories = [
     {
@@ -157,39 +161,44 @@ export const pinnedRepositories = [
 export const packages = [
     {
         packages_id: 1,
-        title: "Python",
-        description: "A standard format for distributing Python programs and libraries used for Python programming language.",
+        title: "GoobTube",
+        description: "Watch all the goobs on the tube",
         public: true
     },
+
 
     {
         packages_id: 2,
-        title: "Docker",
-        description: "A software platform used for building applications based on containers- small and lightweight environments",
+        title: "Apache Notes",
+        description: "Notes that will take you too the mountain top",
         public: true
     },
+
 
     {
         packages_id: 3,
-        title: "NodeJs",
-        description: "A free and open-source JavaScript runtime environment that lets developers create web applications, servers, and more ",
+        title: "Halo",
+        description: "The classic 2006 FPS game",
         public: true
     },
+
 
     {
         packages_id: 4,
-        title: "npm",
-        description: "A package manager for JS, included with NodeJs. Enables sharing and reusing code.",
+        title: "Duo Lingo",
+        description: "Fear the bird",
         public: true
     },
 
+
     {
         packages_id: 5,
-        title: "NuGet",
-        description: "A free and open-source package manager used for the Microsoft dev platforms i.e. .NET.",
+        title: "Number 5",
+        description: "This is the fifth object",
         public: true
     }
 ]
+
         // HEAD
 
 export const profiles = [

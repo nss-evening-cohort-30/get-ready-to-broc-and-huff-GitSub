@@ -255,6 +255,110 @@ a:hover {
   grid-area: footer;
 }
 
+/*start of broc's styling*/
+/*main content for packages flex*/
+#rendPack {
+display: flex;
+flex-flow: row wrap;
+color: white;
+gap: 15px;
+
+}
+.pack-box-el {
+width: 275px;
+height: 200px;
+border: 1px solid rgb(39, 39, 39);
+border-radius: 10px;
+padding: 20px;
+}
+.pack-title-el {
+display: block;
+
+}
+.pack-desc-el {
+display: block;
+
+}
+.learn-El {
+font-weight: lighter;
+}
+/**/
+
+
+/*main content for projects flex*/
+#pro-search-el {
+
+
+}
+#pro-view-el {
+
+
+}
+#pro-tab-el {
+
+
+}
+#pro-item-el {
+
+
+}
+.pro-title-el {
+
+
+}
+.pro-desc-el {
+
+
+}
+/**/
+
+
+/*form styling*/
+#pro-box-el {
+color: white;
+
+}
+#form-title-el {
+  color: white;
+}
+#form-desc-el {
+  color: white;
+
+}
+#entry-el {
+  color: white;
+}
+#form-name-el {
+  color: white;
+
+}
+#form-entry-name-el {
+  color: white;
+  background-color: rgb(39, 39, 39);
+  border-radius: 25px;
+
+}
+#form-pro-desc-el {
+  color: white;
+
+}
+#form-prosub-desc-el {
+  color: white;
+
+}
+#form-entry-desc-el {
+  color: white;
+  background-color: rgb(39, 39, 39);
+  border-radius: 25px;
+}
+#submit-el {
+
+
+}
+/**/
+
+
+/*end of broc's styling*/
 #footer-container p {
   text-align: center;
   font-size: 12px;

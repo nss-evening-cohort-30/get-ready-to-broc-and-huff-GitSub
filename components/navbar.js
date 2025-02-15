@@ -5,16 +5,16 @@ export const createHeader = () => {
                 <nav class="navbar">
                     <ul class="navbar-nav">
                         <li class="nav-item" id="nav-overview">
-                            <a class="nav-link active" aria-current="page" href="index.html">Overview</a>
+                            <button class="nav-link active" aria-current="page">Overview</button>
                         </li>
                         <li class="nav-item" id="nav-repos">
-                            <a class="nav-link" href="repos.html">Repos</a>
+                            <button class="nav-link">Repos</button>
                         </li>
                         <li class="nav-item" id="nav-projects">
-                            <a class="nav-link" href="projects.html">Projects</a>
+                            <button class="nav-link">Projects</button>
                         </li>
                         <li class="nav-item" id="nav-packages">
-                            <a class="nav-link" href="packages.html">Packages</a>
+                            <button class="nav-link">Packages</button>
                         </li>
                     </ul>
                 </nav>

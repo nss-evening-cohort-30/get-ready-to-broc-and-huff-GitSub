@@ -20,22 +20,7 @@ const renderProfile = (array) => {
     renderToDom('#profile-container', profileString);
   });
 
-}
-
-//Render the pinned repo cards to the dom using the repo-card.js component, and passing it through the renderToDom function
-const renderRepoCards = (array) => {
-  let repoString = "";
-
-  // Slice the array to a maximum of 6 items
-  const arrayToRender = array.slice(0, 6);
-
-  arrayToRender.forEach(item => {
-    repoString += repoCard(item);
-    renderToDom('#main-content', repoString);
-  });
-}
-
-//renders the organizations object to the profile card
+  //renders the organizations object to the profile card
 const renderOrgPhotos = (array) => {
   let orgPhotoString = "";
 
@@ -59,6 +44,26 @@ const renderSponsorPhotos = (array) => {
   });
 }
 
+renderOrgPhotos(organizations);
+renderSponsorPhotos(sponsors);
+
+}
+
+//Render the pinned repo cards to the dom using the repo-card.js component, and passing it through the renderToDom function
+const renderRepoCards = (array) => {
+  let repoString = "";
+
+  // Slice the array to a maximum of 6 items
+  const arrayToRender = array.slice(0, 6);
+
+  arrayToRender.forEach(item => {
+    repoString += repoCard(item);
+    renderToDom('#main-content', repoString);
+  });
+}
+
+
+
 
 //renders the pinned-repo-form.js component to the dom, passing it through the renderToDom function
 const renderPinnedForm = () => {
@@ -69,7 +74,25 @@ const renderPinnedForm = () => {
 
 
 
-const eventListeners = () => {
+// const eventListeners = () => {
+// //toggle favorite button (star)
+
+// const toggleStar = (e) => {
+//   if (e.target.id.includes("fav-btn")) {
+//    const [, id] = e.target.id.split('--');
+
+//    const index = profiles.findIndex(item => item.repo_id === Number(id));
+
+//    pinnedRepositories[index].favorite = !pinnedRepositories[index].favorite;
+  
+//    renderRepoCards();
+//   }
+// }
+
+// document.querySelector("#repo-card").addEventListener('click', toggleStar);
+
+
+
 
 //adding new pinned repos to the dom using the pinned-repo-form
   const pinnedForm = document.querySelector('#pinned-form');
@@ -94,8 +117,6 @@ const eventListeners = () => {
 
 const startApp = () => {  
   renderProfile(profiles);
-  renderOrgPhotos(organizations);
-  renderSponsorPhotos(sponsors);
   renderRepoCards(pinnedRepositories);
   renderPinnedForm();
   eventListeners();

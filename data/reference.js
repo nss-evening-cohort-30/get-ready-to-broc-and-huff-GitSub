@@ -93,6 +93,7 @@ export const pinnedRepositories = [
         title: "Global_Air_Quality_2023",
         description: "A comprehensive dataset of air quality metrics (PM2.5, CO, SO2, NO2, O3) collected from monitoring stations worldwide in 2023. Includes location coordinates, timestamps, and meteorological data.",
         language: "Python",
+        favorite: true,
         open: true,
         public: true,
         isPinned: true,
@@ -105,6 +106,7 @@ export const pinnedRepositories = [
         title: "Ecommerce_Customer_Behavior",
         description: "An anonymized dataset of customer interactions on an e-commerce platform. Contains browsing history, purchase data, product ratings, demographics (anonymized), and website usage patterns.",
         language: "Javascript",
+        favorite: true,
         open: true,
         public: true,
         isPinned: true,
@@ -117,6 +119,7 @@ export const pinnedRepositories = [
         title: "Social_Media_Sentiment_Analysis",
         description: "A labeled dataset of social media posts (tweets, comments) annotated with sentiment scores (positive, negative, neutral). Can be used for training sentiment analysis models.",
         language: "Java",
+        favorite: false,
         open: true,
         public: true,
         isPinned: true,
@@ -129,6 +132,7 @@ export const pinnedRepositories = [
         title: "Crop_Yield_Prediction_Dataset",
         description: "A dataset for predicting crop yields based on environmental factors (temperature, rainfall, soil type), fertilizer usage, and historical yield data. Focuses on maize production in the Midwest US.",
         language: "Python",
+        favorite: false,
         open: true,
         public: true,
         isPinned: true,
@@ -141,6 +145,7 @@ export const pinnedRepositories = [
         title: "Traffic_Flow_Sensor_Data",
         description: "Time-series data from traffic sensors located across a major metropolitan area. Includes vehicle counts, speed, and occupancy rates. Useful for traffic flow analysis and congestion prediction.",
         language: "PHP",
+        favorite: false,
         open: true,
         public: true,
         isPinned: true,
@@ -188,6 +193,7 @@ export const packages = [
 
 export const profiles = [
     {
+    id: 1,
     name: "Angy Bo-Bangy",
     username: "@theAngryProgrammer",
     description: "Just a programmer. Sometimes angry.  Mostly just trying to make code work.  Open to collaboration and always learning.  Check out my repos for a glimpse into my (occasionally furious) coding adventures.  May contain traces of sarcasm and strong opinions about indentation.",

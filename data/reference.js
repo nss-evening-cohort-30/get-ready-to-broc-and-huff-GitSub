@@ -55,7 +55,7 @@ export const repositories = [
         title: "Artist Landing Page",
         description: "This repository contains the code that ........",
         open: true,
-        public: true
+        public: true,
     },
 
     {
@@ -63,7 +63,7 @@ export const repositories = [
         title: "Life Coach Booking/Scheduling APP",
         description: "This repository contains the code that ...",
         open: true,
-        public: true
+        public: true,
     },
 
     {
@@ -71,7 +71,7 @@ export const repositories = [
         title: "Express Delivery Site",
         description: "This repository contains the code that ...",
         open: true,
-        public: true
+        public: true,
     },
 
     {
@@ -79,7 +79,7 @@ export const repositories = [
         title: "Blog",
         description: "This repository contains the code that ...",
         open: true,
-        public: true
+        public: true,
     },
 
     {
@@ -87,7 +87,7 @@ export const repositories = [
         title: "Weather APP",
         description: "This repository contains the code that ...",
         open: true,
-        public: true
+        public: true,
     }
 ]
 
@@ -203,7 +203,7 @@ export const packages = [
 
 export const profiles = [
     {
-    id: 1,
+    id: 0,
     name: "Angy Bo-Bangy",
     username: "@theAngryProgrammer",
     description: "Just a programmer. Sometimes angry.  Mostly just trying to make code work.  Open to collaboration and always learning.  Check out my repos for a glimpse into my (occasionally furious) coding adventures.  May contain traces of sarcasm and strong opinions about indentation.",
@@ -211,7 +211,7 @@ export const profiles = [
     location: "Nashville, TN",
     website: "http://www.theangriestcoder.net",
     social: "@theAngryProgrammer",
-    follow: false,
+    isFollowing: false,
     sponsor: false,
     favorite: false,
     followers: 356,

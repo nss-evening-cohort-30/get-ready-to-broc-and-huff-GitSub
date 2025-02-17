@@ -1,5 +1,4 @@
 export const profile = (object) => {
-
   return `
   <div class="profile-div">
     <img src="assets/images/angry-guy.png" alt="an angry programmer screams at their computer">
@@ -7,15 +6,21 @@ export const profile = (object) => {
     <h6>${object.username}</h6>
     <p class="profile-description">${object.description}</p>
     <div class="profile-btn-container">
-      <button>Follow</button>
-
-      ${object.sponsor ? `<button><i class="fa-solid fa-heart"></i>Sponsor</button>` : `<button><i class="fa-regular fa-heart"></i> Sponsor</button>` }
-          
+      ${object.isFollowing
+        ? `<button id="follow-btn--${object.id}">Following</button>`
+        : `<button id="follow-btn--${object.id}">Follow</button>`}
+      ${object.sponsor 
+        ? `<button id="heart-btn--${object.id}"><i class="fa-solid fa-heart"></i> Sponsor</button>` 
+        : `<button id="heart-btn--${object.id}"><i class="fa-regular fa-heart"></i> Sponsor</button>` }
       <button>...</button>
     </div>
     <div class="follow-container">
       <p>
-      <i class="fa-solid fa-user-group"></i> ${object.followers} Followers | ${object.following} Following | ${object.favorite ? `<i class="fa-solid fa-star"></i>` : `<i class="fa-regular fa-star"></i>`} ${object.timesFavorited}
+        <i class="fa-solid fa-user-group"></i><span id ="followers-count-${object.id}"> ${object.followers}</span> Followers | ${object.following} Following | 
+        ${object.favorite 
+          ? `<i class="fa-solid fa-star fav-btn" id="fav-btn--${object.id}"></i>` 
+          : `<i class="fa-regular fa-star fav-btn" id="fav-btn--${object.id}"></i>`} 
+        <span id="times-fav-${object.id}">${object.timesFavorited}</span>
       </p>
     </div>
     <div class="profile-info">
@@ -39,8 +44,9 @@ export const profile = (object) => {
     <h6 class="left">Sponsors</h6>
     <div id="sponsors"></div>
   </div>
-`
-}  
+  `;
+};
+
         
         
         

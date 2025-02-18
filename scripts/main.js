@@ -374,12 +374,24 @@ const packStart = () => {
     //start of brocs project script
     //main content innerHTML
       const mainContent = document.querySelector("#main-content")
-      mainContent.innerHTML = `<input id="pro-search-el" placeholder = "Search all projects">
+      mainContent.innerHTML = `<input id="pro-search-el" placeholder = "Search projects...">
           <div id="pro-view-el">
           <div id="pro-tab-el">
           </div>
           </div>`
     //
+    const search = (e) => {
+      const userInput = e.target.value.toLowerCase();
+      const searchResult = repositories.filter(item => 
+        item.title.toLowerCase().includes(userInput) ||
+        item.description.toLowerCase().includes(userInput)
+      );
+      projectsOnDom(searchResult, "#pro-tab-el");    
+    };
+  
+    const repoSearch = document.querySelector('#pro-search-el');
+    repoSearch.addEventListener("keyup", search);
+  
     //basic loop through data to render it function
       const projectsOnDom = (a, b) => {
         let proItem = ""

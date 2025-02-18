@@ -431,9 +431,8 @@ const packStart = () => {
 
 //all of it put together and started
 const startApp = () => {
-  overStart()
-  createHeader();
   overStart();
+  createHeader();
   createFooter();  
   renderProfile(profiles);
   eventListeners();

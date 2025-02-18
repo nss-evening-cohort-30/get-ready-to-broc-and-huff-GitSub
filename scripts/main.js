@@ -349,20 +349,20 @@ const packStart = () => {
           <div id="pro-view-el">
           <div id="pro-tab-el">
           </div>
-          <div id="pro-item-el">
-          </div>
           </div>`
     //
     //basic loop through data to render it function
       const projectsOnDom = (a, b) => {
         let proItem = ""
         a.forEach((item) => {
-          proItem += `<p class="pro-title-el">${item.title}</p>
-          <p class="pro-desc-el">${item.description}</p>`
+          proItem += `<div id="pro-item-el">
+          <p class="pro-title-el">${item.title}</p>
+          <p class="pro-desc-el">${item.description}</p>
+          </div>`
         })
         renderToDom(b, proItem)
       }
-      projectsOnDom(projects, "#pro-item-el")
+      projectsOnDom(projects, "#pro-tab-el")
     //
     //form content innerhtml
       const formContainer = document.querySelector("#form-container")
@@ -370,10 +370,9 @@ const packStart = () => {
       <h1 id="form-title-el">Create a new project</h1>
       <p id="form-desc-el">Coordinate, track, and update your work in one place, so projects stay transparent and on schedule.</p>
       <form id="entry-el">
-      <h3 id="form-name-el">Project board name</h3>
+      <h3 id="form-name-el">Project board name:</h3>
       <input id="form-entry-name-el">
-      <h3 id="form-pro-desc-el">Description</h3>
-      <p id="form-prosub-desc-el">(optional)</p>
+      <h3 id="form-pro-desc-el">Description (optional):</h3>
       <input id="form-entry-desc-el">
       <button type="submit" id="submit-el">Create project</button>
       </form>
@@ -403,6 +402,7 @@ const packStart = () => {
 
 //all of it put together and started
 const startApp = () => {
+  overStart()
   createHeader();
   overStart();
   createFooter();  

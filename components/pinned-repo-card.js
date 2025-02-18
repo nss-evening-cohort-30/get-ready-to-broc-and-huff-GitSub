@@ -18,6 +18,7 @@ export const pinnedRepoCard = (object) => {
           <span id="times-fav-${object.repo_id}">${object.timesFavorited}</span>
         </p>
         <p><i class="fa-solid fa-code-fork"></i> <span>${object.timesForked}</span></p>
+        <button id="delete-btn-pinned--${object.repo_id}"><i class="fa-regular fa-trash-can"></i></button>
       </div>
     </div>
   `;

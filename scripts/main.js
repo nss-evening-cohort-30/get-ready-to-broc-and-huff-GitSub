@@ -100,9 +100,25 @@ renderSponsorPhotos(sponsors);
   
     renderRepoCards(pinnedRepositories);
     renderPinnedForm();
+
+
+    //DELETE BUTTON
+  const mainContent = document.querySelector('#main-content');
+
+  mainContent.addEventListener('click', (e) => {
+    if (e.target.id.toLowerCase().includes('delete-btn-pinned')){
+      const [, id] = e.target.id.split("--");
+      const index = pinnedRepositories.findIndex(item => item.repo_id === Number(id));
+      pinnedRepositories.splice(index, 1);
+      renderRepoCards(pinnedRepositories);
+    }
+  });
   };
 
 
+
+
+//Toggle Follow Button
 const toggleFollow = (e) => {
     if (e.target.id.includes("follow-btn")) {
         const [, id] = e.target.id.split('--');
@@ -204,7 +220,9 @@ const eventListeners = () => {
   // //toggle favorite button (star)
   document.querySelector('#main-content').addEventListener('click', toggleStar);
   document.querySelector('#profile-container').addEventListener('click', toggleStar);
+  //Toggle Heart on Sponsor Button
   document.querySelector('#profile-container').addEventListener('click', toggleHeart);
+  //Toggle follow button
   document.querySelector('#profile-container').addEventListener('click', toggleFollow);
 
   const navOver = document.querySelector("#nav-overview")
@@ -223,12 +241,12 @@ const repoStart = () => {
   //replace the main content div contnents from overview with an empty div to render repos page when clicked
   const mainContent = document.querySelector('#main-content');
   mainContent.innerHTML = `
-  <div id="repo-container"></div>
+  <div id="search-container"></div>
   <div id="render-repo"></div>
   `;
 
   const initializeSearch = () => {
-    const searchContainer = document.querySelector('#repo-container');
+    const searchContainer = document.querySelector('#search-container');
     searchContainer.innerHTML = '<input class="form-control mb-3" id="repo-search" placeholder="Search repositories...">';
   };
   
@@ -282,6 +300,17 @@ const repoStart = () => {
 
   const repoSearch = document.querySelector('#repo-search');
   repoSearch.addEventListener("keyup", search);
+
+   //DELETE BUTTON
+   
+   document.querySelector('#main-content').addEventListener('click', (e) => {
+     if (e.target.id.toLowerCase().includes('delete-btn-repo')){
+       const [, id] = e.target.id.split("--");
+       const index = repositories.findIndex(item => item.repo_id === Number(id));
+       repositories.splice(index, 1);
+       reposOnDom(repositories);
+     }
+   });
 
 
 }

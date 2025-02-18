@@ -8,13 +8,13 @@ export const createFooter = () => {
           <a class="nav-link" href="#">Dashboard</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="repos.html">Repos</a>
+          <a class="nav-link" href="#">Repos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="projects.html">Projects</a>
+          <a class="nav-link" href="#">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="packages.html">Packages</a>
+          <a class="nav-link" href="#">Packages</a>
         </li>
        </ul>
     </nav>

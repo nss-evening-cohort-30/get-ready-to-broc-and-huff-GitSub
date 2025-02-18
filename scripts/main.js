@@ -382,7 +382,7 @@ const packStart = () => {
     //
     const search = (e) => {
       const userInput = e.target.value.toLowerCase();
-      const searchResult = repositories.filter(item => 
+      const searchResult = projects.filter(item => 
         item.title.toLowerCase().includes(userInput) ||
         item.description.toLowerCase().includes(userInput)
       );

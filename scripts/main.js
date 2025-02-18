@@ -201,10 +201,9 @@ const packStart = () => {
       <h1 id="form-title-el">Create a new project</h1>
       <p id="form-desc-el">Coordinate, track, and update your work in one place, so projects stay transparent and on schedule.</p>
       <form id="entry-el">
-      <h3 id="form-name-el">Project board name</h3>
+      <h3 id="form-name-el">Project board name:</h3>
       <input id="form-entry-name-el">
-      <h3 id="form-pro-desc-el">Description</h3>
-      <p id="form-prosub-desc-el">(optional)</p>
+      <h3 id="form-pro-desc-el">Description (optional):</h3>
       <input id="form-entry-desc-el">
       <button type="submit" id="submit-el">Create project</button>
       </form>

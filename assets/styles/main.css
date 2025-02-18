@@ -270,6 +270,7 @@ height: 200px;
 border: 1px solid rgb(39, 39, 39);
 border-radius: 10px;
 padding: 20px;
+background-color: #222;
 }
 .pack-title-el {
 display: block;
@@ -300,7 +301,6 @@ font-weight: lighter;
 }
 #pro-view-el {
   color: white;
-  border: 1px solid rgb(39, 39, 39);
   display: flex;
   flex-direction: column;
   width: 850px;
@@ -309,10 +309,12 @@ font-weight: lighter;
 
 }
 #pro-item-el {
-  border: 1px solid rgb(39, 39, 39);
+  border: 2px solid black(39, 39, 39);
   height: 100px;
   padding: 5px 5px;
-  border-radius: 2px;
+  border-radius: 5px;
+  background-color: #222;
+  margin-bottom: 2px;
 }
 .pro-title-el {
 
@@ -331,9 +333,11 @@ color: white;
 }
 #form-title-el {
   color: white;
+  font-size: 30px;
 }
 #form-desc-el {
   color: white;
+  font-size: 16px;
 
 }
 #entry-el {
@@ -341,28 +345,26 @@ color: white;
 }
 #form-name-el {
   color: white;
-
+  font-size: 16px;
 }
 #form-entry-name-el {
-  color: white;
-  background-color: black;
-  border-radius: 2px;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
   display: block;
   border: 1px solid rgb(39, 39, 39);
   width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
 }
 #form-pro-desc-el {
   color: white;
-
-}
-#form-prosub-desc-el {
-  color: white;
-
+  font-size: 16px;
 }
 #form-entry-desc-el {
-  color: white;
-  background-color: black;
-  border-radius: 2px;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
   display: block;
   border: 1px solid rgb(39, 39, 39);
   width: 100%;
